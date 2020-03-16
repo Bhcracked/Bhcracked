@@ -22,7 +22,7 @@ client.on('ready', () => {
   console.log(`Iam Ready`);
   console.log(`Guilds: ${client.guilds.size}`);
   console.log(`Users: ${client.users.size}`);
-  client.user.setActivity(`Rolex Level System`,{type: 'Playing'}); ///التعديل علي البلاينج
+  client.user.setActivity(`":?help Rolex Level System"`,{type: 'Playing'}); ///التعديل علي البلاينج
 });
 
 client.on("message", message => {
