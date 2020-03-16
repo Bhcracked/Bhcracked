@@ -18,6 +18,13 @@ fs.readdir('./events/', (err, files) => {
   });
 });
 
+client.on('ready', () => {
+  console.log(`Iam Ready`);
+  console.log(`Guilds: ${client.guilds.size}`);
+  console.log(`Users: ${client.users.size}`);
+  client.user.setActivity(`Rolex Level System`,{type: 'Playing'}); ///التعديل علي البلاينج
+});
+
 client.on("message", message => {
   if (message.author.bot) return; //ignores bots
   //if (message.channel.type !== 'text') return; 
